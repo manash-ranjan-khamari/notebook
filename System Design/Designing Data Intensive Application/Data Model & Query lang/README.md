@@ -25,11 +25,13 @@
     - Declarative is what most Relational DB uses, also CSS for that matter
 
 ## Graph like Data Model
+
     - Best support for many-many relationships 
     - Can be Property Graph Model(Neo4j, Titan, Infinite Graph) or Triple Store Model(Datomic, AllegroGraph, and others)
     - We have declarative query languages such as Cyper, Sparql, Datalog 
 
 ### Property Graph
+
     - Can be represented as a set of vertices & edges
     - If we want to represent in a relation model, it'll look something like this:
     `
