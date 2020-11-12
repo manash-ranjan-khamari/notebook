@@ -31,7 +31,6 @@
 - We have declarative query languages such as **Cyper, Sparql, Datalog**
 
 ### Property Graph
-
 - Can be represented as a set of vertices & edges
 - If we want to represent in a relation model, it'll look something like this:
 ```SQL
@@ -46,4 +45,29 @@ CREATE TABLE edges (
 CREATE INDEX edges_tails ON edges (tail_vertex);
 CREATE INDEX edges_heads ON edges (head_vertex);
 ```
+
+#### Cypher Query Language
+- Developed for Neo4j(Named after Neo Matrix)
+```
+CREATE
+  (NAmerica:Location {name:'North America', type:'continent'}),
+  (USA:Location      {name:'United States', type:'country'  }),
+  (Idaho:Location    {name:'Idaho',         type:'state'    }),
+  (Lucy:Person       {name:'Lucy' }),
+(Idaho) -[:WITHIN]-> (USA) -[:WITHIN]-> (NAme
+```
+- A sample query will look something like this
+```
+MATCH
+(person) -[:BORN_IN]-> () -[:WITHIN*0..]-> (us:Location {name:'United States'}),
+(person) -[:LIVES_IN]-> () -[:WITHIN*0..]-> (eu:Location {name:'Europe'}) 
+RETURN person.name
+```
+- So either we can look up or look behind, both ways works, which is what the Query Optimizer takes care of, finding the best possible way
+- **Can be respresented in Relational SQL with a keyword __WITH RECURSIVE__ but the query would be much trickier**
+
+### Triple Store Model
+- asdsdasdad
+
+
     
