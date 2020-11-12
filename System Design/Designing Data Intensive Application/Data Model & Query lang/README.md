@@ -8,10 +8,10 @@
     - Con
         - Fetching a data node require traversal of each node in a sequential fashion
         - Write became difficult & costly
-- Document Model(Schema-On-Read) vs Relational Model(Schema-on-write)
+- **Document Model(Schema-On-Read) vs Relational Model(Schema-on-write)
     - Where the schema is not defined(heterogenous schema), document model is appropriate
     - Where schemas are more or less the same, relational model is appropriate
-- Declarative vs Imperative way
+- **Declarative vs Imperative way
     - Most programming language follow imperative way
     ```javascript
         function getSharks() { var sharks = [];
@@ -27,8 +27,8 @@
 ## Graph like Data Model
 
 - Best support for many-many relationships 
-- Can be Property Graph Model(Neo4j, Titan, Infinite Graph) or Triple Store Model(Datomic, AllegroGraph, and others)
-- We have declarative query languages such as Cyper, Sparql, Datalog 
+- Can be **Property Graph Model(Neo4j, Titan, Infinite Graph) or Triple Store Model(Datomic, AllegroGraph, and others)**
+- We have declarative query languages such as **Cyper, Sparql, Datalog 
 
 ### Property Graph
 
