@@ -13,7 +13,7 @@
     - Where schemas are more or less the same, relational model is appropriate
 - Declarative vs Imperative way
     - Most programming language follow imperative way
-    ```SQL
+    ```javascript
         function getSharks() { var sharks = [];
             for (var i = 0; i < animals.length; i++) { if (animals[i].family === "Sharks") {
                 sharks.push(animals[i]); }
@@ -34,7 +34,7 @@
 
 - Can be represented as a set of vertices & edges
 - If we want to represent in a relation model, it'll look something like this:
-```
+```SQL
 CREATE TABLE vertices (
     vertex_id integerPRIMARYKEY, properties json
 );
