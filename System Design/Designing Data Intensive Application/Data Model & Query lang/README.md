@@ -13,14 +13,14 @@
     - Where schemas are more or less the same, relational model is appropriate
 - Declarative vs Imperative way
     - Most programming language follow imperative way
-    `
+    ```
         function getSharks() { var sharks = [];
             for (var i = 0; i < animals.length; i++) { if (animals[i].family === "Sharks") {
                 sharks.push(animals[i]); }
             }
             return sharks; 
         }
-    `
+    ```
     - Relation algebra has sharks = σfamily = “Sharks” (animals), which is a declarative type
     - Declarative is what most Relational DB uses, also CSS for that matter
 
@@ -34,7 +34,7 @@
 
 - Can be represented as a set of vertices & edges
 - If we want to represent in a relation model, it'll look something like this:
-`
+```
 CREATE TABLE vertices (
     vertex_id integerPRIMARYKEY, properties json
 );
@@ -45,5 +45,5 @@ CREATE TABLE edges (
 );
 CREATE INDEX edges_tails ON edges (tail_vertex);
 CREATE INDEX edges_heads ON edges (head_vertex);
-`
+```
     
