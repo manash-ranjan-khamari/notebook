@@ -26,24 +26,24 @@
 
 ## Graph like Data Model
 
-    - Best support for many-many relationships 
-    - Can be Property Graph Model(Neo4j, Titan, Infinite Graph) or Triple Store Model(Datomic, AllegroGraph, and others)
-    - We have declarative query languages such as Cyper, Sparql, Datalog 
+- Best support for many-many relationships 
+- Can be Property Graph Model(Neo4j, Titan, Infinite Graph) or Triple Store Model(Datomic, AllegroGraph, and others)
+- We have declarative query languages such as Cyper, Sparql, Datalog 
 
 ### Property Graph
 
-    - Can be represented as a set of vertices & edges
-    - If we want to represent in a relation model, it'll look something like this:
-    `
-    CREATE TABLE vertices (
-        vertex_id integerPRIMARYKEY, properties json
-    );
-    CREATE TABLE edges (
-        edge_id integer PRIMARY KEY,
-        tail_vertex integer REFERENCES vertices (vertex_id), head_vertex integer REFERENCES vertices (vertex_id), label text,
-        properties json
-    );
-    CREATE INDEX edges_tails ON edges (tail_vertex);
-    CREATE INDEX edges_heads ON edges (head_vertex);
-    `
+- Can be represented as a set of vertices & edges
+- If we want to represent in a relation model, it'll look something like this:
+`
+CREATE TABLE vertices (
+    vertex_id integerPRIMARYKEY, properties json
+);
+CREATE TABLE edges (
+    edge_id integer PRIMARY KEY,
+    tail_vertex integer REFERENCES vertices (vertex_id), head_vertex integer REFERENCES vertices (vertex_id), label text,
+    properties json
+);
+CREATE INDEX edges_tails ON edges (tail_vertex);
+CREATE INDEX edges_heads ON edges (head_vertex);
+`
     
