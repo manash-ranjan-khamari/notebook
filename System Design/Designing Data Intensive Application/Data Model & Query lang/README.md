@@ -13,7 +13,7 @@
     - Where schemas are more or less the same, relational model is appropriate
 - Declarative vs Imperative way
     - Most programming language follow imperative way
-    ```
+    ```SQL
         function getSharks() { var sharks = [];
             for (var i = 0; i < animals.length; i++) { if (animals[i].family === "Sharks") {
                 sharks.push(animals[i]); }
