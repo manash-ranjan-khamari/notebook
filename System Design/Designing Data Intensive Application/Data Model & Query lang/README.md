@@ -27,7 +27,7 @@
 ## Graph like Data Model
 
 - Best support for many-many relationships 
-- Can be **Property Graph Model(Neo4j, Titan, Infinite Graph) or Triple Store Model(Datomic, AllegroGraph, and others)**
+- Can be **Property Graph Model(Neo4j, Titan, Infinite Graph)** or **Triple Store Model(Datomic, AllegroGraph, and others)**
 - We have declarative query languages such as **Cyper, Sparql, Datalog**
 
 ### Property Graph
@@ -67,7 +67,11 @@ RETURN person.name
 - **Can be respresented in Relational SQL with a keyword __WITH RECURSIVE__ but the query would be much trickier**
 
 ### Triple Store Model
-- asdsdasdad
+- Follows the **(Subject, Predicate, Object)** pattern, e.g Sam loves movies
+- Subject should always be a vertex
+- For object it depends
+    - If the object is a primitive datatype, such as string or numeric, in that case it would be a property of the subject, e.g; Sam's age is 33, this can be represented as Sam as a vertex, having property {age: 33}
+    - If the object is other than above, it can be a vertex, which subject connecting to object via an edge, which is t
 
 
     
