@@ -71,7 +71,7 @@ RETURN person.name
 - Subject should always be a vertex
 - For object it depends
     - If the object is a primitive datatype, such as string or numeric, in that case it would be a property of the subject, e.g; Sam's age is 33, this can be represented as Sam as a vertex, having property {age: 33}
-    - If the object is other than above, it can be a vertex, which subject connecting to object via an edge, which is t
+    - If the object is other than above, it can be a vertex, which subject connecting to object via an edge, which is the predicate, e.g; Sam is married to Andrea, this can be represent as Sam, Andrea as two vertex & marriage is the edge connecting them both
 
 
     

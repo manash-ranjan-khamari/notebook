@@ -17,5 +17,14 @@
 | Exponential time  | O(b^n)    | b > 1
 | Factorial time    | O(n!)     | 
 
-## Array
-- 
+## Linked List
+- Single Linked List
+- Doubly Linked List
+
+## Priority Queue
+- Abstract Data Type which is like a queue but follows a priority
+- Can be implmented with any DS, but actually best implemented using Heaps
+
+### Heaps
+- Is a tree based DS
+- Can be a min heap or a max heap  

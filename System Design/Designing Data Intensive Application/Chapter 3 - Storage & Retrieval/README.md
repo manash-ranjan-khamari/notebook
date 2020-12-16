@@ -35,4 +35,9 @@ db_get() {
 
 ### Making B-Tree reliable
 - The main diff. to LSM-tree, is in B-Tree it over-writes a page on disk with new data, unlike LSM where it appends always
-- But this also require an additional DS **write-ahead log**, as if the DB has crashed while doing an insert operation, which involves separating a block to two. - Thus to ensure that no such child-block remained orphan incase of a crash, post recovery it reads from write-ahead log & construct the B-Tree again.
+- But this also require an additional DS **write-ahead log**, as if the DB has crashed while doing an insert operation, which involves separating a block to two. 
+- Thus to ensure that no such child-block remained orphan incase of a crash, post recovery it reads from write-ahead log & construct the B-Tree again.
+
+## Comparing B-Trees with LSM-Trees
+- The common notion is B-Tree are good for faster reads where are LSM-Tree are good for faster write.
+- 
